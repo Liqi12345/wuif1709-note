@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+/*封装四则运算
+	function a(num,num2,num3){
+		switch(num3){
+			case '+' :alert(num + num2);
+			break;
+			case '-' :alert(num - num2);
+			break;
+			case '*' :alert(num * num2);
+			break;
+			case '/' :alert(num / num2);
+			break;
+			case '%' :alert(num % num2);
+			break;
+			dafault:alert('错误');
+		}
+	}
+	a(2,3,'*');*/
+	// 封装九九乘法表
+/*	function a(num){
+		for(var i = 1; i <= num;i++){
+			for(var b = 1; b <= i ;b++){
+
+				document.write(`${i}*${b}=${i*b} &nbsp;&nbsp;`);
+				if(b == i){
+				document.write('<br/>');
+				}
+			}
+
+		}
+	}
+	a(20);*/
+
+	// 封装十乘十表格
+/*	function a(num,num1,num2){
+
+		var tab ='<table border="1" cellspacing="0" width="400" height= "400" >';
+		for(var i = 1; i <= num;i++){
+			tab +='<tr bgcolor="+num2+">';
+			for(var b = 1; b <= num1;b++){
+				tab += '<td > </td>';
+			}
+			tab += '</tr>';
+		}
+		tab += '</table>';
+
+		document.write(tab);
+	}
+
+	a(10,10,'pink');*/
+// 金字塔
+	// function arr(num){
+	// 	for(var i = 1; i <= num; i++){
+	// 		for(var a = 0 ; a <= num-i;a++){
+	// 			document.write('&nbsp;')
+	// 		} 
+	// 		for(var b = 1; b <= i;b++){
+	// 			document.write('* &nbsp;')
+
+	// 		}
+	// 		document.write('<br>')
+	// 	}
+	// 	return num;
+	// }
+	// console.log(arr(6));
+	// 数组去空
+	// var arr =[2,6,,8,5,,9]
+	// function qk(arr){
+	// 	for(var i = 0; i < arr.length;i++){
+	// 		arr[i] != undefined
+	// 	}
+	// 	return arr;
+	// }
+	// console.log(qk(arr))
+	// 数组求最大值
+	// var arr = [2,45,8,96,72]
+	// function maxx(arr){
+	// 	var max = arr[0];
+	// 	for(var i =0;i <arr.length;i++){
+	// 		if(max < arr[i]){
+	// 			max = arr[i]
+	// 		}
+	// 	}
+	// 	return max;
+	// }
+	// console.log(maxx(arr))
+	
+	// 封装大于0的数
+	/*function a(d){
+		var c =[];
+		for(var b = 0; b < d.length;b++){
+			if( d[b] > 0){
+				c[c.length] = d[b];
+			}
+		}
+		console.log(c);
+	}
+	var d = [5,3,-8,2,-1,9,-5,-5];
+	a(d);
+
+	// 封装数组元素扩大2倍
+	/*function a(d){
+		var c = [];
+		for(var b = 0; b < d.length;b++){
+			c[c.length] = d[b] *2 
+		}
+		console.log(c);
+	}
+	var d = [5,3,-8,2,-1,9,-5,-5];
+	a(d);*/
+
+
+
+
+	// 反向输出数组中的各个元素
+	/*function a(d){
+		var c =[];
+		for(var b = d.length-1; b >= 0; b--){
+			c[c.length] = d[b];
+		}
+		console.log(c);
+	}
+	var d =[1,2,3,4,5,6];
+	a(d);*/
+
+
+
+	// 数组合并
+	// function a(d,e){
+	// 	for(var b = 0; b < e.length;b++){
+	// 		d[d.length] = e[b];
+	// 	}
+	// 	console.log(d);
+	// }
+	// var d =[1,2,3,4,5];
+	// var e =[6,7,8,9,10];
+	// a(d,e);
+	
+	 // 数组查找，查找数组中是否包含a元素，包含则返回此元素的下标，不包含则返回-1
+	/* function a(d){
+	 	for(var b = 0; b < d.length;b++){
+	 		if(d[b] === e){
+	 			return b;
+	 		}
+	 	}
+	 	if(d[b] !== e){
+	 		return -1;
+	 	}
+	 }
+	 var e ='a';
+	 var d =[2,3,'a',6];
+	 console.log(a(d));*/
+
+	// 找出数组中是否包含某个类型，包含返回true，不包含返回false
+	 /*function a(){
+	 	for(var b = 0; b < d.length;b++){
+	 		if(isNaN(d[b])){
+	 			return true;
+	 		}
+	 	}
+	 		return false;
+	 }
+	 var d =[6,,'k',6];
+	 console.log(a());*/
+	 
+
+
+
+
+
+
+	// 数组求最小值
+	// var arr = [2,45,8,96,72]
+	// function maxx(arr){
+	// 	var max = arr[0];
+	// 	for(var i =0;i <arr.length;i++){
+	// 		if(max > arr[i]){
+	// 			max = arr[i]
+	// 		}
+	// 	}
+	// 	return max;
+	// }
+	// console.log(maxx(arr))
+	// 
+	// 数组求平均值 
+		var arr = [5,2,3,3,4]
+		function Arr(){
+			this.pj=function(arr){
+				var sum = 0;
+				for(var i = 0; i < arr.length;i++){
+					sum = sum + arr[i];
+				}
+				 sum /= arr.length;
+				 return sum;
+			}
+			// 从大到小
+			this.px=function(arr){
+				for(var i = 0;i <arr.length;i++){
+					for(var a =i+1;a <arr.length;a++){
+						if(arr[i] < arr[a]){
+							var c;
+							c = arr[i];
+							arr[i] = arr[a];
+							arr[a] = c
+						}
+					}
+				}
+				return arr;
+			}
+			// 从小到大
+			this.px2=function(arr){
+				for(var i = 0;i <arr.length;i++){
+					for(var a =i+1;a <arr.length;a++){
+						if(arr[i] > arr[a]){
+							var c;
+							c = arr[i];
+							arr[i] = arr[a];
+							arr[a] = c
+						}
+					}
+				}
+				return arr;
+			}
+			 // 转换字符串,用"-"链接
+			this.str = function(arr){
+				var c ='-';
+				var d ='';
+				for(var i = 0; i < arr.length;i++){
+					if(i < arr.length-1){
+						d += arr[i] + c;
+					}else{
+						d += arr[i]
+					}
+				}
+				return d;
+			}
+			// 数组去重
+			this.qc = function(arr){
+				var crr = [];
+				for(var i = 0;i < arr.length;i++){
+					var brr = true;
+					for(var b = i+1;b <arr.length;b++){
+						if(arr[i] == arr[b]){
+							brr = false;
+						}
+					}
+					if(brr == true){
+						crr[crr.length] = arr[i]
+					}
+				}
+				return crr;
+			}
+		}
+		var arrr = new Arr();
+		// console.log(arrr.pj(arr))
+		// console.log(arrr.px(arr))
+		// console.log(arrr.px2(arr))
+		// console.log(arrr.str(arr))
+		// console.log(arrr.qc(arr))
+		document.write(`平均值为${arrr.pj(arr)},从大到小为${arrr.px(arr)},从小到大为${arrr.px2(arr)},字符串链接为${arrr.str(arr)},去重为${arrr.qc(arr)}`)
+
+</script>
